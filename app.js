@@ -67,6 +67,5 @@ app.use(function(err, req, res, next) {
   });
 });
 
-hahaha
 
 //module.exports = app;
