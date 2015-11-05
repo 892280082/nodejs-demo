@@ -34,7 +34,6 @@ app.use(session({
 
 var routes = require('./routes/index')(app);
 var users = require('./routes/users');
-app.listen(3000);
 
 
 // catch 404 and forward to error handler
@@ -43,6 +42,7 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
+
 
 // error handlers
 // development error handler
@@ -67,5 +67,5 @@ app.use(function(err, req, res, next) {
   });
 });
 
-
+app.listen(3000);
 //module.exports = app;
